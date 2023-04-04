@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+int main(){
+    int Candidato1=0;
+    int Candidato2=0;
+    int Candidato3=0;
+    int VotoB=0;
+    int VotoN=0;
+    int Escolha=0;
+    int VotosT=0;
+    int VotosBN=0;
+    int PercentualBN=0;
+    /** Recolher Votos **/ 
+        while (1){
+            printf ("1-Candidato 1\n2-Candidato 2\n3-Candidato 3\n4-Voto em Branco \n5-Voto Nulo\n-1-Encerrar Votacao\n");
+            scanf ("%d",&Escolha);
+                if (Escolha==-1) break;
+                switch (Escolha){
+                    case 1: 
+                    printf ("Quantos votos?\n");
+                    scanf ("%d",&Candidato1);
+                    break;
+                    case 2: 
+                    printf ("Quantos votos?\n");
+                    scanf ("%d",&Candidato2);
+                    break;
+                    case 3: 
+                    printf ("Quantos votos?\n");
+                    scanf ("%d",&Candidato3);
+                    break;
+                    case 4: 
+                    printf ("Quantos votos?\n");
+                    scanf ("%d",&VotoB);
+                    break;
+                    case 5: 
+                    printf ("Quantos votos?\n");
+                    scanf ("%d",&VotoN);
+                    break;
+                    default: printf("Valor invalido\n");
+            }
+        }
+        VotosBN = VotoB+VotoN;
+        VotosT = Candidato3+Candidato2+Candidato1+VotosBN;
+        PercentualBN = (VotosBN*100/VotosT*100)/100;
+        printf (" Candidato 1: %d \n Candidato 2: %d \n Candidato 3: %d \n Votos em Branco: %d \n Votos Nulos: %d \n",Candidato1,Candidato2,Candidato3,VotoB,VotoN);
+        printf (" Percentual de Votos em Branco e Nulos: %d%\n",PercentualBN);
+        
+}
+
