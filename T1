@@ -15,7 +15,7 @@ int main(){
     int PercentualBN=0;
     /** Recolher Votos **/ 
         while (1){
-            printf ("1-Candidato 1\n2-Candidato 2\n3-Candidato 3\n4-Voto em Branco \n5-Voto Nulo\n-1-Encerrar Votacao\n");
+            printf ("(1) Candidato 1\n(2) Candidato 2\n(3) Candidato 3\n(4) Voto em Branco \n(5) Voto Nulo\n(-1) Encerrar Votacao\n");
             scanf ("%d",&Escolha);
                 if (Escolha==-1) break;
                 switch (Escolha){
