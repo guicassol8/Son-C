@@ -34,7 +34,9 @@ void main(void){
                     case 2: 
                     printf ("Quantos votos?\n");
                     scanf ("%f",&Cod);
-                    if (Cod<0){
+                    AuxCod=Cod;
+                    FAuxCod=Cod;
+                    if (Cod<0||FAuxCod!=AuxCod){
                         printf("Valor invalido\n");
                         break;
                     }
@@ -43,7 +45,9 @@ void main(void){
                     case 3:
                     printf ("Quantos votos?\n");
                     scanf ("%f",&Cod);
-                    if (Cod<0){
+                    AuxCod=Cod;
+                    FAuxCod=Cod;
+                    if (Cod<0||FAuxCod!=AuxCod){
                         printf("Valor invalido\n");
                         break;
                     }
@@ -52,7 +56,9 @@ void main(void){
                     case 4:
                     printf ("Quantos votos?\n");
                     scanf ("%f",&Cod);
-                    if (Cod<0){
+                    AuxCod=Cod;
+                    FAuxCod=Cod;
+                    if (Cod<0||FAuxCod!=AuxCod){
                         printf("Valor invalido\n");
                         break;
                     }
@@ -61,7 +67,9 @@ void main(void){
                     case 5:
                     printf ("Quantos votos?\n");
                     scanf ("%f",&Cod);
-                    if (Cod<0){
+                    AuxCod=Cod;
+                    FAuxCod=Cod;
+                    if (Cod<0||FAuxCod!=AuxCod){
                         printf("Valor invalido\n");
                         break;
                     }
