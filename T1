@@ -1,8 +1,7 @@
 #include <stdio.h>
 /** Guilherme Roth Cassol **/
 
-int main(){
-    printf("\e[1;1H\e[2J");
+void main(void){
     int Cod=0;
     int Candidato1=0;
     int Candidato2=0;
@@ -10,9 +9,9 @@ int main(){
     int VotoB=0;
     int VotoN=0;
     int Escolha=0;
-    int VotosT=0;
-    int VotosBN=0;
-    int PercentualBN=0;
+    float VotosT=0;
+    float VotosBN=0;
+    float PercentualBN=0;
     /** Recolher Votos **/ 
         while (1){
             printf ("(1) Candidato 1\n(2) Candidato 2\n(3) Candidato 3\n(4) Voto em Branco \n(5) Voto Nulo\n(-1) Encerrar Votacao\n");
@@ -22,43 +21,59 @@ int main(){
                     case 1: 
                     printf ("Quantos votos?\n");
                     scanf ("%d",&Cod);
+                    if (Cod<0){
+                        printf("Valor invalido\n");
+                        break;
+                    }
                     Candidato1+=Cod;
-                    printf("\e[1;1H\e[2J");
                     break;
                     case 2: 
                     printf ("Quantos votos?\n");
                     scanf ("%d",&Cod);
+                    if (Cod<0){
+                        printf("Valor invalido\n");
+                        break;
+                    }
                     Candidato2+=Cod;
-                    printf("\e[1;1H\e[2J");
                     break;
-                    case 3: 
+                    case 3:
+                    if (Cod<0){
+                        printf("Valor invalido\n");
+                        break;
+                    }
                     printf ("Quantos votos?\n");
                     scanf ("%d",&Cod);
                     Candidato3+=Cod;
-                    printf("\e[1;1H\e[2J");
                     break;
-                    case 4: 
+                    case 4:
+                    if (Cod<0){
+                        printf("Valor invalido\n");
+                        break;
+                    }
                     printf ("Quantos votos?\n");
                     scanf ("%d",&Cod);
                     VotoB+=Cod;
-                    printf("\e[1;1H\e[2J");
                     break;
-                    case 5: 
+                    case 5:
+                    if (Cod<0){
+                        printf("Valor invalido\n");
+                        break;
+                    }
                     printf ("Quantos votos?\n");
                     scanf ("%d",&Cod);
                     VotoN+=Cod;
-                    printf("\e[1;1H\e[2J");
                     break;
                     default:
-                    printf("\e[1;1H\e[2J");
                     printf("Valor invalido\n");
             }
         }
         VotosBN = VotoB+VotoN;
         VotosT = Candidato3+Candidato2+Candidato1+VotosBN;
         PercentualBN = (VotosBN*100/VotosT*100)/100;
-        printf("\e[1;1H\e[2J");
         printf (" Candidato 1: %d \n Candidato 2: %d \n Candidato 3: %d \n Votos em Branco: %d \n Votos Nulos: %d \n",Candidato1,Candidato2,Candidato3,VotoB,VotoN);
-        printf (" Percentual de Votos em Branco e Nulos: %d%\n",PercentualBN);
+        if (PercentualBN==0){
+            printf (" Percentual de Votos em Branco e Nulos: 0%%\n");
+        }
+        else printf (" Percentual de Votos em Branco e Nulos: %f%%\n",PercentualBN);
         
 }
