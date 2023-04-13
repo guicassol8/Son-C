@@ -74,6 +74,5 @@ void main(void){
         if (PercentualBN==0){
             printf (" Percentual de Votos em Branco e Nulos: 0%%\n");
         }
-        else printf (" Percentual de Votos em Branco e Nulos: %f%%\n",PercentualBN);
-        
+        else printf (" Percentual de Votos em Branco e Nulos: %f%%\n",PercentualBN);        
 }
