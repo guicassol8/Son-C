@@ -13,8 +13,6 @@ void main(void) {
   float VotosT = 0;
   float VotosBN = 0;
   float PercentualBN = 0;
-  int AuxCod = 0;
-  float FAuxCod = 0;
   /** Recolher Votos **/
   while (1) {
     printf("(1) Candidato 1\n(2) Candidato 2\n(3) Candidato 3\n(4) Voto em Branco \n(5) Voto Nulo\n(-1) Encerrar Votacao\n");
