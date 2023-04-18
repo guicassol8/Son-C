@@ -21,21 +21,26 @@ void main(void) {
     switch (Escolha) {
     case 1:
       Candidato1++;
+      printf ("Voto Computado!\n");
       break;
     case 2:
       Candidato2++;
+      printf ("Voto Computado!\n");
       break;
     case 3:
       Candidato3++;
+      printf ("Voto Computado!\n");
       break;
     case 4:
       VotoB++;
+      printf ("Voto Computado!\n");
       break;
     case 5:
       VotoN++;
+      printf ("Voto Computado!\n");
       break;
     default:
-      printf("Valor invalido\n");
+      printf("Voto Invalido!\n");
       break;
     }
   }
