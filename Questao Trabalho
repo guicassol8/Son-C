@@ -1,0 +1,21 @@
+Urna eletrônica
+O primeiro trabalho prático da disciplina consiste na construção de um
+programa que deverá apurar a eleição de três candidatos. O programa
+deverá realizar as seguintes tarefas, e apresentar os resultados ao final da
+votação:
+• Calcular o total de votos para cada candidato;
+• Calcular a quantidade de votos nulos;
+• Calcular a quantidade de votos em branco;
+• Calcular o percentual de votos brancos e nulos em relação ao total;
+Os votos deverão ser contabilizados utilizando os seguintes valores
+como entrada:
+1. - Candidato 1
+2. - Candidato 2
+3. - Candidato 3
+4. - Voto em branco
+5. - Voto nulo
+Para que a votação seja encerrada, deve-se digitar o valor -1. Caso seja
+utilizado um valor diferente do esperado como entrada, o programa deve
+emitir uma mensagem de erro. O menu com as opções de voto deve ser
+impresso na tela sempre antes de cada entrada de votação. 
+O programa deve ser feito em C.
