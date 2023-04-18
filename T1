@@ -25,16 +25,16 @@ void main(void) {
       Candidato1++;
       break;
     case 2:
-      Candidato2 ++;
+      Candidato2++;
       break;
     case 3:
-      Candidato3 ++;
+      Candidato3++;
       break;
     case 4:
-      VotoB ++;
+      VotoB++;
       break;
     case 5:
-      VotoN ++;
+      VotoN++;
       break;
     default:
       printf("Valor invalido\n");
