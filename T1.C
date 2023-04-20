@@ -15,7 +15,11 @@ void main(void) {
   float PercentualBN = 0;
   /** Recolher Votos **/
   while (1) {
-    printf("(1) Candidato 1\n(2) Candidato 2\n(3) Candidato 3\n(4) Voto em Branco \n(5) Voto Nulo\n(-1) Encerrar Votacao\n");
+    printf("(1) Candidato 1\n"
+    "(2) Candidato 2\n"
+    "(3) Candidato 3\n"
+    "(4) Voto em Branco \n"
+    "(5) Voto Nulo\n(-1) Encerrar Votacao\n");
     scanf("%d", & Escolha);
     if (Escolha == -1) {
       break;
@@ -49,8 +53,8 @@ void main(void) {
   VotosBN = VotoB + VotoN;
   VotosT = Candidato3 + Candidato2 + Candidato1 + VotosBN;
   PercentualBN = (VotosBN * 100 / VotosT * 100) / 100;
-  printf(" Candidato 1: %f \n Candidato 2: %f \n Candidato 3: %f \n Votos em Branco: %f \n Votos Nulos: %f \n", Candidato1, Candidato2, Candidato3, VotoB, VotoN);
+  printf(" Candidato 1: %.0f \n Candidato 2: %.0f \n Candidato 3: %.0f \n Votos em Branco: %.0f \n Votos Nulos: %.0f \n", Candidato1, Candidato2, Candidato3, VotoB, VotoN);
   if (VotosBN == 0) {
-    printf(" Percentual de Votos em Branco e Nulos: 0.000000%%\n");
-  } else printf(" Percentual de Votos em Branco e Nulos: %f%%\n", PercentualBN);
+    printf(" Percentual de Votos em Branco e Nulos: 0%%\n");
+  } else printf(" Percentual de Votos em Branco e Nulos: %.2f%%\n", PercentualBN);
 }
