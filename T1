@@ -17,7 +17,9 @@ void main(void) {
   while (1) {
     printf("(1) Candidato 1\n(2) Candidato 2\n(3) Candidato 3\n(4) Voto em Branco \n(5) Voto Nulo\n(-1) Encerrar Votacao\n");
     scanf("%d", & Escolha);
-    if (Escolha == -1) break;
+    if (Escolha == -1) {
+      break;
+    }
     switch (Escolha) {
     case 1:
       Candidato1++;
