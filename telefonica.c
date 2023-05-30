@@ -1,12 +1,10 @@
 #include "stdio.h"
 #include "string.h"
 
-struct usuario
-{
-    long cpf;
-    char nome [20];
-    char sobrenome [20];
-};
+#include "file-io.h"
+#include "usuario.h"
+
+#define USUARIOS_FILEPATH "/Users/guilherme.cassol/documents/test.txt"
 
 int totalUsuarios = 0;
 struct usuario usuarios [100];
@@ -24,11 +22,15 @@ void listUsuario()
 void creatUsuario(char nome[],char sobrenome[], long cpf)
 {
     struct usuario u1;
+    FILE *fp;
+
     strcpy (u1.nome,nome);
     strcpy (u1.sobrenome,sobrenome);
+
     u1.cpf = cpf;
     usuarios[totalUsuarios] = u1;
     totalUsuarios++;
+    fileWrite(USUARIOS_FILEPATH, u1);
     printf ("Usuario Registrado.\n");
 }
 
